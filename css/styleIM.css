@@ -1,0 +1,338 @@
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   background-image: radial-gradient(circle at center center, #000000, #020202), repeating-radial-gradient(circle at center center, #000000, #000000, 9px, transparent 18px, transparent 9px);
+background-blend-mode: multiply;
+  height: 200vh;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #000;
+  position: relative; }
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #000000;
+    margin-bottom: 0;
+    z-index: 9;
+
+  }
+
+.navbar-brand{
+    color: #fff;
+}
+  .navbar-nav {
+    display: flex;
+    color: #fff;
+    background-color: black;
+  }
+.navbar-nav > li > a {
+  width: 150px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.navbar-nav > li > a i {
+  font-size: inherit;
+}
+    .navbar-custom {
+      height: 100px;
+    }
+    .navbar-brand, .nav-link {
+      line-height: 40px;
+    }
+  .navbar-nav .nav-link {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: #fff;
+    transition: 0.3s ease;
+}
+navbar-collapse{
+    width: 100%;
+}
+
+.navbar-toggler-icon {
+  transition: transform 0.2s ease-out;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  transform: rotate(90deg);
+}
+  .nav-item:hover {
+    background-color: white;
+        transition: 0.3s ease;
+  }
+
+  .nav-item:hover .nav-link {
+    color: #000000;
+        transition: 0.3s ease;
+  }
+  .navbar-toggler-icon {
+    filter: invert(100%);
+  }
+.navbar-collapse-container {
+  width: 100%;
+  background-color: inherit;
+}
+
+.dropdown-menu {
+  background-color: black;
+  border: 5px solid black;
+      width: 700px;
+  padding: 10px;
+  margin-top: -200px;
+    border-radius: 0%;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: all .1s;
+}
+.dropdown:hover .dropdown-menu{
+    opacity: 1;
+    margin-top: 10px;
+    visibility: visible;
+    transform: translateY(0%);
+    transition: all .3s;
+}
+  .dropdown-item {
+      padding-right: 8rem;
+      padding-bottom: 1.8rem;
+    background-color: #000000;
+    color: #fff;
+    transition: 0.3s ease;
+  }
+  .dropdown-item:hover {
+    background-color: #fff;
+    color: #000000;
+    transition: 0.3s ease;
+  }
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown-arrow {
+    font-size: 10px;
+    margin-right: -70px;
+    vertical-align: middle;
+}
+.nav-link-events {
+    margin-left: -40px;
+}
+   .image-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 900px;
+      object-fit: cover;
+    }
+    .bg-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .image-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 2.5rem;
+      text-align: center;
+      width: 100%;
+    }
+h2{
+    color: #fff;
+}
+p{
+    color: #fff;
+}
+.col-md-12.text-center h2,
+.col-md-12.text-center p {
+  color: #ffffff;
+  text-align: center;
+}
+h4{
+    margin-bottom: 0px;
+    margin-top: 300px;
+}
+
+.panel {
+  background-color: #000000;
+  border-radius: 5px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #4d4d4d;
+  align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 10px;
+}
+.panel:hover {
+  box-shadow: 0px 0px 10px #fff;
+    transition: 0.3s ease;
+}
+.panel-body p {
+  color: #fff;
+  text-align: center;
+}
+footer {
+  margin-top: 100px;
+    background-color: #000000;
+    border-top: 2px solid #fff;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer i {
+  color: white;
+  cursor: pointer;
+}
+@media (min-width: 100px) {
+     .min-vh-50-a {
+    min-height: 60vh;
+  }
+                .bg-image-container {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 600px;
+      z-index: -1;
+      overflow: hidden;
+    }
+}
+@media (min-width: 390px) {
+     .min-vh-50-a {
+    min-height: 60vh;
+  }
+                .bg-image-container {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 800px;
+      z-index: -1;
+      overflow: hidden;
+    }
+      .bg-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+}
+/* Малые экраны */
+@media (min-width: 576px) {
+  .min-vh-50-aa {
+    min-height: 60vh;
+  }
+                .bg-image-container {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 800px;
+      z-index: -1;
+      overflow: hidden;
+    }
+         .bg-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
+
+/* Средние экраны */
+@media (min-width: 768px) {
+  .min-vh-50-ab {
+    min-height: 60vh;
+  }
+                .bg-image-container {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 800px;
+      z-index: -1;
+      overflow: hidden;
+    }
+      .bg-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
+
+/* Большие экраны */
+@media (min-width: 992px) {
+  .min-vh-50-ac {
+    min-height: 30vh;
+  }  .min-vh-50-bc {
+    min-height: 30vh;
+  }
+       .image-text {
+      font-size: 3rem;
+    }
+         .image-container img {
+      height: 800px;
+    }
+        .nav-link-events {
+    margin-left: 0px;
+}
+    .dropdown-arrow {
+    font-size: 10px;
+    margin-right: -10px;
+    vertical-align: middle;
+}
+                .bg-image-container {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 800px;
+      z-index: -1;
+      overflow: hidden;
+    }
+      .bg-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
+
+
+/* Экстра большие экраны */
+@media (min-width: 1200px) {
+  .min-vh-50-ad {
+    min-height: 25vh;
+  }  .min-vh-50-bd {
+    min-height: 25vh;
+  }
+    .nav-link-events {
+    margin-left: 0px;
+}
+    .dropdown-arrow {
+    font-size: 10px;
+    margin-right: -10px;
+    vertical-align: middle;
+}
+            .bg-image-container {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 900px;
+      z-index: -1;
+      overflow: hidden;
+    }
+      .bg-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+}
